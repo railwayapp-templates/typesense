@@ -17,3 +17,7 @@ COPY --chmod=755 scripts/* ./
 ENTRYPOINT ["/bin/sh"]
 
 CMD ["start.sh"]
+
+RUN apk --no-cache add curl
+
+
